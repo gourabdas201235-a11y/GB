@@ -1,15 +1,26 @@
-# Advanced Physics Question Bank Desktop Application
+# Question Bank Application
 
-This repository contains the source code and resources for the Advanced Physics Question Bank Desktop Application. This application aims to provide a comprehensive question bank for advanced physics topics, allowing users to study and practice effectively.
+This is a WPF project for managing a question bank.
 
 ## Project Structure
-- **src/**: Contains all the source code for the application.
-- **docs/**: Documentation related to the application including technical specifications and user guides.
-- **tests/**: Contains all the test cases for unit and integration testing.
-- **assets/**: Contains all the assets such as icons and images used in the application.
 
-### Installation
-Instructions for setting up the project on your local machine...
+```plaintext
+QuestionBank
+├── QuestionBank.sln          # Solution file
+├── QuestionBank              # Main Project
+│   ├── App.xaml              # Application definition
+│   ├── App.xaml.cs           # Application logic
+│   ├── MainWindow.xaml       # Main window interface
+│   ├── MainWindow.xaml.cs    # Main window logic
+│   ├── Models                # Data models
+│   │   └── Question.cs       # Question model
+│   └── Views                 # UI Views
+│       └── QuestionView.xaml  # View for questions
+└── QuestionBank.Tests        # Test project
+    └── QuestionTests.cs      # Tests for the question bank
+```
 
-### Usage
-Instructions on how to use the application...
+## Setup Instructions
+1. Load the solution file `QuestionBank.sln` in Visual Studio.
+2. Restore NuGet packages if necessary.
+3. Build and run the application.
